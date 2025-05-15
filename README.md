@@ -1,3 +1,3 @@
 Requirements:
 
-JDK 21.0.4+
+JDK 21
