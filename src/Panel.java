@@ -856,7 +856,7 @@ public class Panel extends javax.swing.JFrame {
     private void CalcularNumeros() {
 
         String numero = NumbersOctal.getText();
-        
+
         Respuesta.setHorizontalAlignment(Respuesta.CENTER);
 
         if (EsOctal(numero)) {
@@ -867,12 +867,14 @@ public class Panel extends javax.swing.JFrame {
 
             NotOctal = false;
 
-        } else if (numero.equals("")) {
+        } else if (numero.equals("") && !ComprovarCheckBoxes()) {
 
             Respuesta.setText("Error");
 
+        } else if (numero.equals("") && ComprovarCheckBoxes()){
             
-
+            CalcularCasillas();
+            
         } else {
             Respuesta.setText("NO es Octal!");
 
@@ -1267,6 +1269,28 @@ public class Panel extends javax.swing.JFrame {
         WriteOthers.setSelected(false);
         WriteOwner.setSelected(false);
 
+    }
+
+    private boolean ComprovarCheckBoxes() {
+
+        if (UID.isSelected()
+                || GID.isSelected()
+                || StickyBit.isSelected()
+                || ExecuteGroup.isSelected()
+                || ExecuteOthers.isSelected()
+                || ExecuteOwner.isSelected()
+                || ReadGroup.isSelected()
+                || ReadOthers.isSelected()
+                || ReadOwner.isSelected()
+                || WriteGroup.isSelected()
+                || WriteOthers.isSelected()
+                || WriteOwner.isSelected()) {
+
+            return true;
+
+        } else {
+            return false;
+        }
     }
 
     /**
