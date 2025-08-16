@@ -1,4 +1,4 @@
-<h1 align="center">WinSCP-Chmod GUI</h1>
+# WinSCP-Chmod GUI
 
 [![captura.jpg](https://i.postimg.cc/KzJk8SyK/captura.jpg)](https://postimg.cc/YGLqdP0k)
 
