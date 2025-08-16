@@ -1,6 +1,6 @@
 <h1 align="center">WinSCP-Chmod GUI</h1>
 
-[![captura.jpg](https://i.postimg.cc/nV9pzfx6/captura.jpg)](https://postimg.cc/LhSrC7nT)
+[![captura.jpg](https://i.postimg.cc/QCWPxSZ7/captura.jpg)](https://postimg.cc/gLm4gVJc)
 
 ## Description
 
